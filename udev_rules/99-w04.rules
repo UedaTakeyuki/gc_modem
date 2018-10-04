@@ -1,0 +1,11 @@
+# refer https://www.raspberrypi.org/forums/viewtopic.php?t=18996
+#       need sg3-utils (sudo apt-get install sg3-utils)
+#  
+# or http://www.draisberghof.de/usb_modeswitch/bb/viewtopic.php?f=4&t=1734
+#
+# USB Storage (Zero Installation)
+KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="12d1", ENV{ID_MODEL_ID}=="1f01", RUN+="/usr/bin/sg_raw /dev/sr0 11 06 20 00 00 00 00 00 01 00"
+#KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="12d1", ENV{ID_MODEL_ID}=="1f01", RUN+="sudo usb_modeswitch -v 0x12d1 -p 0x1f01 -n -I -M '55534243123456780000000000000011060000000000000000000000000000'"
+
+# USB Modem (ttyUSB)
+#SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="1442", RUN+="/sbin/modprobe usbserial vendor=0x$attr{idVendor} product=0x$attr{idProduct}"

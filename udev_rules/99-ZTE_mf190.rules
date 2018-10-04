@@ -1,0 +1,11 @@
+ls
+# for ZTE mf190
+KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2000", RUN+="/usr/bin/eject /dev/$kernel"
+ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2003", ATTRS{bNumEndpoints}=="03", ATTRS{bInterfaceNumber}=="03", SYMLINK+="gc_modem"
+ACTION=="add", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2003", RUN+="/bin/sh -c '/home/pi/modem/modeminit.sh &'"
+#ACTION=="add", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2003", RUN+="/bin/sh -c '/usr/bin/python /home/pi/modem/getinfos.py > /tmp/modem.ini'"
+#ACTION=="add", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2003", RUN+="/bin/sh -c '/bin/echo aho > /tmp/a.txt'"
+#ACTION=="add", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2003", RUN+="/bin/sh -c '/usr/bin/python /home/pi/SCRIPT/modem/getinfos.py > /tmp/modem.ini'"
+
+#ACTION=="add", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2003", RUN+="/bin/ln -s /dev/ttyUSB3 /tmp/gc_modem"
+#ACTION=="remove", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="2003", RUN+="/usr/bin/unlink /tmp/gc_modem"

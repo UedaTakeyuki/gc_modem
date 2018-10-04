@@ -1,0 +1,8 @@
+# http://www.draisberghof.de/usb_modeswitch/bb/viewtopic.php?f=3&t=2565
+# 
+# USB Storage (Zero Installation)
+#KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="05c6", ENV{ID_MODEL_ID}=="1000", RUN+="/usr/sbin/usb_modeswitch -W -v 05c6 -p 1000 -K"
+SUBSYSTEM=="usb", ATTR{idVendor}=="05c6", ATTR{idProduct}=="1000", RUN+="/usr/sbin/usb_modeswitch -W -v 05c6 -p 1000 -K"
+
+# USB Modem (ttyUSB)
+#SUBSYSTEM=="usb", ATTR{idVendor}=="05c6", ATTR{idProduct}=="6000", RUN+="/sbin/modprobe usbserial vendor=0x$attr{idVendor} product=0x$attr{idProduct}"

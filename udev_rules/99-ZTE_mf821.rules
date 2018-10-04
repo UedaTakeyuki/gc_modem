@@ -1,0 +1,4 @@
+ls
+# for ZTE mf821
+KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="0166", RUN+="/usr/bin/eject /dev/$kernel"
+ENV{ID_VENDOR_ID}=="19d2", ENV{ID_MODEL_ID}=="0167", ATTRS{bNumEndpoints}=="03", ATTRS{bInterfaceNumber}=="03", SYMLINK+="gc_modem"

@@ -1,0 +1,6 @@
+# for FOMA L-05A
+KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="1004", ENV{ID_MODEL_ID}=="613a", RUN+="/usr/bin/eject /dev/$kernel"
+ENV{ID_VENDOR_ID}=="1004", ENV{ID_MODEL_ID}=="6124", ATTRS{bNumEndpoints}=="01", ATTRS{bInterfaceNumber}=="00", SYMLINK+="gc_modem"
+
+# USB Modem (ttyUSB)
+#SUBSYSTEM=="usb", ATTR{idVendor}=="1004", ATTR{idProduct}=="6124", RUN+="/sbin/modprobe usbserial vendor=0x$attr{idVendor} product=0x$attr{idProduct}"

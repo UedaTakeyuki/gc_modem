@@ -1,0 +1,5 @@
+# http://www.draisberghof.de/usb_modeswitch/bb/viewtopic.php?t=561
+# 
+# USB Storage (Zero Installation)
+SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="14fe", RUN+="/usr/sbin/usb_modeswitch -W -v 12d1 -p 14fe -m 0x01 -M '55534243123456780000000000000011060000000000000000000000000000'"
+ENV{ID_VENDOR_ID}=="12d1", ENV{ID_MODEL_ID}=="1c05", ATTRS{bNumEndpoints}=="03", ATTRS{bInterfaceNumber}=="00", SYMLINK+="gc_modem"

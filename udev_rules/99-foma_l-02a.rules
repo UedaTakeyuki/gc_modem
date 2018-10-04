@@ -1,0 +1,8 @@
+# for FOMA L-02A
+# USB Storage (Zero Installation)
+KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="1004", ENV{ID_MODEL_ID}=="610c", RUN+="/usr/bin/eject /dev/$kernel"
+ENV{ID_VENDOR_ID}=="1004", ENV{ID_MODEL_ID}=="6109", ATTRS{bNumEndpoints}=="02", ATTRS{bInterfaceNumber}=="01", SYMLINK+="gc_modem"
+
+
+# USB Modem (ttyUSB)
+SUBSYSTEM=="usb", ATTR{idVendor}=="1004", ATTR{idProduct}=="6109", RUN+="/sbin/modprobe usbserial vendor=0x$attr{idVendor} product=0x$attr{idProduct}"

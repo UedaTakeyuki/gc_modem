@@ -1,0 +1,15 @@
+[Unit]
+Description=wvdial auto connect
+Wants=network.target
+Before=network.target
+
+[Service]
+Type=simple
+PIDFile=/run/wvdial.pid
+ExecStart=/usr/bin/wvdial gosim -C /home/pi/wvdial/wvdial.conf
+ExecReload=/bin/kill -s HUP $MAINPID
+#ExecStop=/bin/kill -s TERM $MAINPID
+ExecStop=/bin/kill -s KILL $MAINPID
+
+[Install]
+WantedBy=multi-user.target
