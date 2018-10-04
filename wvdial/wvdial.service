@@ -6,7 +6,8 @@ Before=network.target
 [Service]
 Type=simple
 PIDFile=/run/wvdial.pid
-ExecStart=/usr/bin/wvdial gosim -C /home/pi/wvdial/wvdial.conf
+EnvironmentFile=/home/pi/gc_modem/wvdial/wvdial.ini
+ExecStart=/usr/bin/wvdial $DIALER1 $DIALER2 -C /home/pi/gc_modem/wvdial/wvdial.conf
 ExecReload=/bin/kill -s HUP $MAINPID
 #ExecStop=/bin/kill -s TERM $MAINPID
 ExecStop=/bin/kill -s KILL $MAINPID
