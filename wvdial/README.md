@@ -106,18 +106,18 @@ Following vendors are abailable:
 |[hologram](https://hologram.io)|hologram|
 
 ### Carrier's in Myanmmer
-| vendor name | URL | name to set as DIALER1 |
-|:---|:---|:---|
-|Myanma Posts and Telecommunications|http://mpt.com.mm/mm/|MTP|
-|Ooredoo Myanmar|http://www.ooredoo.com.mm/|Ooredoo|
-|Telenor Myanmar|https://www.telenor.com.mm/|TelenorMyanmar|
+| vendor name | name to set as DIALER1 |
+|:---|:---|
+|[Myanma Posts and Telecommunications](http://mpt.com.mm/mm)|MTP|
+|[Ooredoo Myanmar](http://www.ooredoo.com.mm)|Ooredoo|
+|[Telenor Myanmar](https://www.telenor.com.mm)|TelenorMyanmar|
 
 ### Carrier's in Senegal
-| vendor name | URL | name to set as DIALER1 |
-|:---|:---|:---|
-|Orange/Sonatel|https://www.orange.sn|OrangeSonatel|
-|Sentel/Tigo|https://www.goafricaonline.com/sn/388680-sentel-tigo-dakar-senegal|SentelTigo|
-|Expresso/Sudatel|https://www.expressotelecom.com/|ExpressoSudatel|
+| vendor name | name to set as DIALER1 |
+|:---|:---|
+|[Orange/Sonatel](https://www.orange.sn)|OrangeSonatel|
+|[Sentel/Tigo](https://www.goafricaonline.com/sn/388680-sentel-tigo-dakar-senegal)|SentelTigo|
+|[Expresso/Sudatel](https://www.expressotelecom.com)|ExpressoSudatel|
 
 ## Request to add SIM card setting
 Add SIM card request is really welcome! Please make [issue](https://github.com/UedaTakeyuki/gc_modem/issues) for this.
