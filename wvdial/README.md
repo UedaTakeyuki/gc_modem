@@ -98,7 +98,7 @@ Above example, SIM vendor name is gosim
 Following vendors are abailable:
 
 ### International Carrier's
-| vendor name | URL | name to set as DIALER1 |
+| vendor name | name to set as DIALER1 |
 |:---|:---|
 |[soracom](https://soracom.jp)|soracom|
 |[TRANSATEL](http://www.transatel.com)|TRANSATEL|
