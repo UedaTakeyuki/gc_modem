@@ -119,4 +119,9 @@ Following vendors are abailable:
 |Sentel/Tigo|https://www.goafricaonline.com/sn/388680-sentel-tigo-dakar-senegal|SentelTigo|
 |Expresso/Sudatel|https://www.expressotelecom.com/|ExpressoSudatel|
 
+## Request to add SIM card setting
+Add SIM card request is really welcome! Please make [issue](https://github.com/UedaTakeyuki/gc_modem/issues) for this.
+
+## QA
+Any questions, suggestions, reports are welcome! Please make [issue](https://github.com/UedaTakeyuki/gc_modem/issues) without hesitation! 
 
