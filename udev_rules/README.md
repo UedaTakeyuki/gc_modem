@@ -1,5 +1,5 @@
 # udev_rules
-Udev rules for usb 3G & 4G modem recognition.
+Collection of udev rules for usb 3G & 4G modem and setup script.
 
 ## setup
 ***set.sh*** set a specified rule active and install dependencies.
