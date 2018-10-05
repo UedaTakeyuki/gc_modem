@@ -99,7 +99,7 @@ Following vendors are abailable:
 
 ### International Carrier's
 | vendor name | URL | name to set as DIALER1 |
-|:---|:---:|:---:|
+|:---|:---|:---|
 |soracom|https://soracom.jp/|soracom|
 |TRANSATEL|http://www.transatel.com/|TRANSATEL|
 |gosim|https://gosim.com/|gosim|
@@ -107,14 +107,16 @@ Following vendors are abailable:
 
 ### Carrier's in Myanmmer
 | vendor name | URL | name to set as DIALER1 |
-|:---|:---:|:---:|
+|:---|:---|:---|
 |Myanma Posts and Telecommunications|http://mpt.com.mm/mm/|MTP|
 |Ooredoo Myanmar|http://www.ooredoo.com.mm/|Ooredoo|
 |Telenor Myanmar|https://www.telenor.com.mm/|TelenorMyanmar|
 
 ### Carrier's in Senegal
 | vendor name | URL | name to set as DIALER1 |
-|:---|:---:|:---:|
+|:---|:---|:---|
 |Orange/Sonatel|https://www.orange.sn|OrangeSonatel|
 |Sentel/Tigo|https://www.goafricaonline.com/sn/388680-sentel-tigo-dakar-senegal|SentelTigo|
 |Expresso/Sudatel|https://www.expressotelecom.com/|ExpressoSudatel|
+
+
