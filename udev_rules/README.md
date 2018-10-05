@@ -25,3 +25,6 @@ For avoiding at this ambiguity of tty name, the udev_rules of 3G modem in this p
 Note that 4G modem which is designed to connect by ***NDIS***, of cource these rules don't make ***gc_modem*** becauae they don't use tty which gc_modem related to.
 
 ## available modem
+
+### L02-a
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=grenouille0d-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B004HBO1F8&linkId=0b8984985a2092758921403f19a063c0"></iframe>
