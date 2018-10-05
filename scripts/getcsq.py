@@ -24,16 +24,16 @@
 import re
 import at
 import csq_table
-
+import argparse
 
 pattern = re.compile('^\+CSQ: +([0-9]+),99\\r\\n')
 
-def read():
+def read(d, timeout):
 	csq   			= ""
 	rssi  			= ""
 	condition   = ""
 
-	lines = at.read("AT+CSQ")
+	lines = at.read("AT+CSQ", d, timeout)
 
 	matchOB = re.match(pattern, lines[1])
 
@@ -44,4 +44,14 @@ def read():
 	return [csq, rssi, condition]
 
 if __name__ == '__main__':
-	print read()
+	parser = argparse.ArgumentParser(description="3g signal quality",
+		                               epilog="result: [csq, rssi, condition]")
+	parser.add_argument("-d", 
+		                  help='modem device like "/dev/ttyUSB0". Default is "/dev/gc_modem"',
+		                  default="/dev/gc_modem")
+	parser.add_argument("-timeout", 
+		                  help='timeout time with modem. Default is 1',
+		                  default=1)
+	
+	args = parser.parse_args()
+	print read(args.d, int(args.timeout))
