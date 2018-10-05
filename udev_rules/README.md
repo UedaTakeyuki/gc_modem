@@ -45,3 +45,8 @@ Japanese inexpensive 3G modem. This can be used in Japan because of it is adapte
 ### [NTT DoCoMo L05-a](https://amzn.to/2NoD9L3)
 Japanese inexpensive 3G modem. This can be used in Japan because of it is adapted japanese wireless reguration called 技適(giteki).
 
+## Request to add rule file
+Add rule file request is welcome, both pull request and just [issue](https://github.com/UedaTakeyuki/gc_modem/issues) with sample 3G modem device.
+
+## QA
+Any questions, suggestions, reports are welcome! Please make [issue](https://github.com/UedaTakeyuki/gc_modem/issues) without hesitation! 
