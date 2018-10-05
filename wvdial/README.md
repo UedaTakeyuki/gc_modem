@@ -99,11 +99,11 @@ Following vendors are abailable:
 
 ### International Carrier's
 | vendor name | URL | name to set as DIALER1 |
-|:---|:---|:---|
-|soracom|https://soracom.jp/|soracom|
-|TRANSATEL|http://www.transatel.com/|TRANSATEL|
-|gosim|https://gosim.com/|gosim|
-|hologram|https://hologram.io/|hologram|
+|:---|:---|
+|[soracom](https://soracom.jp)|soracom|
+|[TRANSATEL](http://www.transatel.com)|TRANSATEL|
+|[gosim](https://gosim.com)|gosim|
+|[hologram](https://hologram.io)|hologram|
 
 ### Carrier's in Myanmmer
 | vendor name | URL | name to set as DIALER1 |
