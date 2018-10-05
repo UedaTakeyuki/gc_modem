@@ -24,14 +24,24 @@ For avoiding at this ambiguity of tty name, the udev_rules of 3G modem in this p
 
 Note that 4G modem which is designed to connect by ***NDIS***, of cource these rules don't make ***gc_modem*** becauae they don't use tty which gc_modem related to.
 
-## available modem
+## modems which is prepared rule
+
+### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=231245417295&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">Huawei E173</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=231245417295&mpt=[CACHEBUSTER]">
+Inexpensive 3G modem.
+### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=263287908707&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">ZTE-mf190</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=263287908707&mpt=[CACHEBUSTER]">
+Inexpensive 3G modem.
+
+### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=282356097050&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">ZTE-MF821</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=282356097050&mpt=[CACHEBUSTER]">
+Inexpensive 4G(LTE) modem but ***gc_modem*** link available due to it's serial connection suppport.
+
+### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=122290531078&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">Qualcomm_Siemens-SG75</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=122290531078&mpt=[CACHEBUSTER]">
+4G modem. The connection interface is ***NDIS***. 
+
+### Huawei w04
+4G modem. The connection interface is ***NDIS***. 
 
 ### [NTT DoCoMo L02-a](https://amzn.to/2QxxlkF)
+Japanese inexpensive 3G modem. This can be used in Japan because of it is adapted japanese wireless reguration called 技適(giteki).
 ### [NTT DoCoMo L05-a](https://amzn.to/2NoD9L3)
-### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=231245417295&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">Huawei E173</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=231245417295&mpt=[CACHEBUSTER]">
-### [Qualcomm_Siemens-SG75](https://amzn.to/2QxxlkF)
-### [Huawei w04](https://amzn.to/2QxxlkF)
-### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=263287908707&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">ZTE-mf190</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=263287908707&mpt=[CACHEBUSTER]">
-### [ZTE_mf821](https://amzn.to/2QxxlkF)
+Japanese inexpensive 3G modem. This can be used in Japan because of it is adapted japanese wireless reguration called 技適(giteki).
 
-### 
