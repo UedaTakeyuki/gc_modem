@@ -1,5 +1,5 @@
 # gc_modem
-USB 3G dongle utils
+USB 3G dongle utils. To use these script, modem device shoud NOT be used, or get "devce busy" errror.
 
 ## at.py
 Send AT command and return AT command response as an array.
