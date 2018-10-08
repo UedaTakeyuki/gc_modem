@@ -100,10 +100,11 @@ Following vendors are abailable:
 ### International Carrier's
 | vendor name | name to set as DIALER1 |
 |:---|:---|
-|[soracom](https://soracom.jp)|soracom|
 |[TRANSATEL](http://www.transatel.com)|TRANSATEL|
 |[gosim](https://gosim.com)|gosim|
+|[mtx connect](https://www.mtxc.eu/en/)|mtx|
 |[hologram](https://hologram.io)|hologram|
+|[soracom](https://soracom.jp)|soracom|
 
 ### Carrier's in Myanmmer
 | vendor name | name to set as DIALER1 |
