@@ -5,10 +5,7 @@ USB 3G dongle utils
 - [wvdial](wvdial/README.md) : Settings for ppp connection with SIM cards.
 - [scripts](scripts/README.md) : utils to get information of 3G Dongle. 
 
-# General Design
+## gc_modem symlink to appropriate tty for 3G modem
 
-A tty device which used by 3G modem (like /dev/ttyUSB0) is linked to the ***/dev/gc_modem*** file by udev rules provided on the project, to avoid confusion which tty (ttyUSB0, ttyUSB1, ttyUSB2, ttyUSB3 and so on) is used.
-
-The [wvdial configration](wvdial/wvdial.conf) use ***/dev/gc_modem***.
-
-Scripts files also use ***/dev/gc_modem***.
+To avoid ambiguity of which tty device is relating with 3G modem, a udev_rules of this project make symbolic link ***/dev/gc_modem***  to the appropriate tty device.
+The [wvdial configration](wvdial/wvdial.conf) and script files in this project also use ***/dev/gc_modem***.
