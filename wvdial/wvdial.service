@@ -5,6 +5,8 @@ Before=network.target
 
 [Service]
 Type=simple
+Restart=always
+RestartSec=30
 PIDFile=/run/wvdial.pid
 EnvironmentFile=/home/pi/gc_modem/wvdial/wvdial.ini
 ExecStart=/usr/bin/wvdial $DIALER1 $DIALER2 -C /home/pi/gc_modem/wvdial/wvdial.conf
