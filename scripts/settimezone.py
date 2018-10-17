@@ -39,6 +39,17 @@ def set():
 		set_from_table(mcc_table[mcc])
 
 if __name__ == '__main__':
+	parser = argparse.ArgumentParser(description="3g signal quality",
+		                         epilog="result: [csq, rssi, condition]")
+	parser.add_argument("-d", 
+		                  help='modem device like "/dev/ttyUSB0". Default is "/dev/gc_modem"',
+		                  default="/dev/gc_modem")
+	parser.add_argument("-timeout", 
+		                  help='timeout time with modem. Default is 1',
+		                  default=1)
+	
+	args = parser.parse_args()
+	print read(args.d, int(args.timeout))
 	if len(sys.argv) == 1:
 		set()
 	elif sys.argv[1] in mcc_table:
