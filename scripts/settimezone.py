@@ -7,10 +7,12 @@
 
   Usage: 
 						import settimezone
-						settimezon.set()
+						settimezon.set([d],[timeout])
+				or
+						python -m settimezone [-d=modem_device] [-timeout=modem_connection_timeouttime]
 
 	Test:
-						python -m settimezone [mcc]
+						python -m settimezone -mcc=mcc
 
 	glossary:
 						mcc: mobile country code
@@ -47,7 +49,12 @@ if __name__ == '__main__':
 	parser.add_argument("-timeout", 
 		                  help='timeout time with modem. Default is 1',
 		                  default=1)
-	
+	parser.add_argument("-mcc", 
+		                  help='force set timezone as specified as mcc, for test of mcc_table',
+		                  default="")
 	args = parser.parse_args()
 	args = parser.parse_args()
-	set(args.d, int(args.timeout))
+	if args.mcc:
+		set_from_table(mcc_table[args.mcc])
+	else:
+		set(args.d, int(args.timeout))
