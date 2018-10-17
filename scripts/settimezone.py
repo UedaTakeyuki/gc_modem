@@ -19,6 +19,7 @@
 
 import os
 import sys
+import argparse
 import getcurrentcops
 
 mcc_table = {}
@@ -33,14 +34,13 @@ def set_tz(Area, Location):
 def set_from_table(table):
 	set_tz(table["Area"], table["Location"])
 
-def set():
-	[cop, mcc, mnc] = getcurrentcops.read()
+def set(d, timeout):
+	[cop, mcc, mnc] = getcurrentcops.read(d, timeout)
 	if mcc in mcc_table:
 		set_from_table(mcc_table[mcc])
 
 if __name__ == '__main__':
-	parser = argparse.ArgumentParser(description="3g signal quality",
-		                         epilog="result: [csq, rssi, condition]")
+	parser = argparse.ArgumentParser(description="Set device timezone MCC(Mobile Country Code) which 3G Dongle detect")
 	parser.add_argument("-d", 
 		                  help='modem device like "/dev/ttyUSB0". Default is "/dev/gc_modem"',
 		                  default="/dev/gc_modem")
@@ -49,9 +49,5 @@ if __name__ == '__main__':
 		                  default=1)
 	
 	args = parser.parse_args()
-	print read(args.d, int(args.timeout))
-	if len(sys.argv) == 1:
-		set()
-	elif sys.argv[1] in mcc_table:
-		# for test
-		set_from_table(mcc_table[sys.argv[1]])
+	args = parser.parse_args()
+	set(args.d, int(args.timeout))
