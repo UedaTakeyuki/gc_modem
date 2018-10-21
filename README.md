@@ -5,6 +5,22 @@ USB 3G dongle utils
 - [wvdial](wvdial/README.md) : Settings for ppp connection with SIM cards.
 - [scripts](scripts/README.md) : utils to get information of 3G Dongle. 
 
+## install
+download from [release](https://github.com/UedaTakeyuki/gc_modem/releases)
+
+or 
+
+```
+git clone https://github.com/UedaTakeyuki/gc_modem.git
+```
+
+## setup
+Setup environment & install depending modules by:
+
+```
+./setup.sh 
+```
+
 ## gc_modem symlink to appropriate tty for 3G modem
 
 To avoid ambiguity of which tty device is relating with 3G modem, a udev_rules of this project make symbolic link ***/dev/gc_modem***  to the appropriate tty device.
