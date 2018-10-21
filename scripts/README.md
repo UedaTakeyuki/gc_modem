@@ -32,7 +32,7 @@ ati
 
 ## getcsq.py 
 
-Send AT+CSQ for get signal strength of the device.
+Send AT+CSQ for get a Signal Quarity from Carrier.
 
 ### USAGE
 ```
