@@ -1,6 +1,15 @@
 # wvdial
 Config fils of wvdial for making ppp connection with specific SIM card and making systemctl service.
 
+## install
+download from [release](https://github.com/UedaTakeyuki/gc_modem/releases)
+
+or 
+
+```
+git clone https://github.com/UedaTakeyuki/gc_modem.git
+```
+
 ## setup
 setup.sh installs depending softwares.
 
