@@ -14,12 +14,6 @@ or
 git clone https://github.com/UedaTakeyuki/gc_modem.git
 ```
 
-## setup
-Setup environment & install depending modules by:
-
-```
-./setup.sh 
-```
 
 ## gc_modem symlink to appropriate tty for 3G modem
 
