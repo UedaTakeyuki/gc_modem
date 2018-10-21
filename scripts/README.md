@@ -1,10 +1,20 @@
 # gc_modem
 USB 3G dongle utils. To use these script, modem device shoud NOT be used, or get "devce busy" errror.
 
-## at.py
+## install
+download from [release](https://github.com/UedaTakeyuki/gc_modem/releases)
+
+or 
+
+```
+git clone https://github.com/UedaTakeyuki/gc_modem.git
+```
+
+## scripts
+### at.py
 Send AT command and return AT command response as an array.
 
-### USAGE
+#### USAGE
 ```
 pi@raspberrypi:~/gc_modem/scripts $ python -m at --help
 usage: at.py [-h] [-d D] [-timeout TIMEOUT] at_command
@@ -21,7 +31,7 @@ optional arguments:
   -timeout TIMEOUT  timeout time with modem. Default is 1
 ```
 
-### Example
+#### Example
 ```
 pi@raspberrypi:~/gc_modem/scripts $ python -m at ati
 ati
@@ -30,11 +40,11 @@ ati
 ['ati\r\r\n', 'Manufacturer: ZTE CORPORATION\r\n', 'Model: MF190\r\n', 'Revision: BD_MF190V1.0.0B02\r\n', 'IMEI: 359728033653091\r\n', '+GCAP: +CGSM,+DS,+ES\r\n', '\r\n', 'OK\r\n']
 ```
 
-## getcsq.py 
+### getcsq.py 
 
 Send AT+CSQ for get a Signal Quarity from Carrier.
 
-### USAGE
+#### USAGE
 ```
 pi@raspberrypi:~/gc_modem/scripts $ python -m getcsq --help
 usage: getcsq.py [-h] [-d D] [-timeout TIMEOUT]
@@ -49,13 +59,13 @@ optional arguments:
 
 result: [csq, rssi, condition]
 ```
-### Example
+#### Example
 ```
 pi@raspberrypi:~/gc_modem/scripts $ python -m getcsq
 ['13', '-87', 'OK']
 ```
 
-### definition of csq value, rssi, and condition.
+#### definition of csq value, rssi, and condition.
 [origina](http://m2msupport.net/m2msupport/atcsq-signal-quality/)
 
 | Value of csq | RSSI dBm | Condition |
