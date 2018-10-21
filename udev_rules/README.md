@@ -1,6 +1,15 @@
 # udev_rules
 Collection of udev rules for usb 3G & 4G modem and setup script.
 
+## install
+download from [release](https://github.com/UedaTakeyuki/gc_modem/releases)
+
+or 
+
+```
+git clone https://github.com/UedaTakeyuki/gc_modem.git
+```
+
 ## setup
 ***set.sh*** set a specified rule active and install dependencies.
 ```
