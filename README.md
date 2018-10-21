@@ -1,5 +1,5 @@
 # gc_modem
-USB 3G dongle utils
+USB 3G dongle and Data SIM card utilities
 
 - [udev_rules](udev_rules/README.md) : Udev rules for usb 3G modem recognition.
 - [wvdial](wvdial/README.md) : Settings for ppp connection with SIM cards.
