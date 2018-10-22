@@ -1,5 +1,5 @@
-# gc_modem
-USB 3G dongle utils. To use these script, modem device shoud NOT be used, or get "devce busy" errror.
+# scripts
+Python scripts for issue AT commands. To use these script, modem device shoud NOT be used, or get "devce busy" errror.
 
 ## install
 download from [release](https://github.com/UedaTakeyuki/gc_modem/releases)
