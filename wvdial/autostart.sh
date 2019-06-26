@@ -23,7 +23,8 @@ usage_exit(){
 
 on(){
 	sed -i -e "s@^ExecStart=.*@ExecStart=/usr/bin/wvdial "'$DIALER1 $DIALER2'" -C ${SCRIPT_DIR}/${CMD}.conf@" -e "s@^EnvironmentFile=.*@EnvironmentFile=${SCRIPT_DIR}/${CMD}.ini@" ${SCRIPT_DIR}/${CMD}.service
-	sudo ln -s ${SCRIPT_DIR}/${CMD}.service /etc/systemd/system/${CMD}.service
+#	sudo ln -s ${SCRIPT_DIR}/${CMD}.service /etc/systemd/system/${CMD}.service
+	sudo cp ${SCRIPT_DIR}/${CMD}.service /etc/systemd/system/${CMD}.service
 	sudo systemctl daemon-reload
 	sudo systemctl enable ${CMD}.service
 	sudo systemctl start ${CMD}.service
