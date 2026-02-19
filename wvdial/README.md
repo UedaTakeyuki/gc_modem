@@ -22,6 +22,13 @@ wvdial is already the newest version (1.61-4.1).
 0 upgraded, 0 newly installed, 0 to remove and 51 not upgraded.
 ```
 
+## connect to network
+call wvdial with ``Operator`` name and ``Modem device`` name. Fx: operator = soracom & modem = gc_modem as follows;
+
+```
+sudo wvdial soracom gc_modem -C ./wvdial.conf
+```
+
 ## service setup
 The script file ***autostart.sh*** provide the feature to set/reset settings as to start 3G network connection automatically at the system start time.
 
