@@ -4,12 +4,13 @@ Wants=network.target
 Before=network.target
 
 [Service]
-Type=simple
+#Type=simple
+Type=forking
 Restart=always
 RestartSec=30
 PIDFile=/run/wvdial.pid
-EnvironmentFile=/home/pi/gc_modem/wvdial/wvdial.ini
-ExecStart=/usr/bin/wvdial $DIALER1 $DIALER2 -C /home/pi/gc_modem/wvdial/wvdial.conf
+EnvironmentFile=/home/pi/github/gc_modem/wvdial/wvdial.ini
+ExecStart=/usr/bin/wvdial $DIALER1 $DIALER2 -C /home/pi/github/gc_modem/wvdial/wvdial.conf
 ExecReload=/bin/kill -s HUP $MAINPID
 #ExecStop=/bin/kill -s TERM $MAINPID
 ExecStop=/bin/kill -s KILL $MAINPID
