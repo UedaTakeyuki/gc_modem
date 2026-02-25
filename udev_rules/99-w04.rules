@@ -9,3 +9,7 @@ KERNEL=="sr[0-9]*", ENV{ID_VENDOR_ID}=="12d1", ENV{ID_MODEL_ID}=="1f01", RUN+="/
 
 # USB Modem (ttyUSB)
 #SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="1442", RUN+="/sbin/modprobe usbserial vendor=0x$attr{idVendor} product=0x$attr{idProduct}"
+
+# e173
+#SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="1506", SYMLINK+="gc_modem"
+SUBSYSTEM=="usb-serial", SYMLINK+="gc_modem"
