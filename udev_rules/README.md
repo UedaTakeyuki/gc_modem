@@ -27,35 +27,36 @@ pi@raspberrypi:~/gc_modem/udev_rules $ ./reset.sh 99-ZTE_mf190.rules
 ```
 
 ## /dev/gc_modem
-Regarding 3G modem which is designed to provide network connection by ***SERIAL***, the name of tty which is related to modem is depend on not only model of modem, but also situation. For example, ZTE-mf190 tend to create ***ttyUSB3*** even Huawai-E3276 tend to create ***ttyUSB0***. Also, in case ttyUSB3 is already busy of used by other device, ZTE-mf190 create other tty like ***ttyUSB4*** or ***ttyUSB5*** and so on.
+Regarding the 3G modem, which is designed to provide network connection via ***serial***, the name of the tty which is related to the modem depends not only on the model of the modem, but also on the situation. For example, ZTE-mf190 tend to create ***ttyUSB3***, even Huawei-E3276 tends to create ***ttyUSB0***. Also, in case ttyUSB3 is already busy of used by other device, ZTE-mf190 create other tty devices like ***ttyUSB4*** or ***ttyUSB5*** and so on.
 
-For avoiding at this ambiguity of tty name, the udev_rules of 3G modem in this project make symbolic link ***gc_modem*** to the created tty by modem. So all you have got to do is just use tty named ***gc_modem*** under /dev folder.
+To avoid this ambiguity of tty name, the udev_rules of the 3G modem in this project make a symbolic link ***gc_modem*** to the created tty by the modem. So all you have to do is only use the tty named ***gc_modem*** under ```/dev``` folder.
 
-Note that 4G modem which is designed to connect by ***NDIS***, of cource these rules don't make ***gc_modem*** becauae they don't use tty which gc_modem related to.
+Note that the 4G modem which is designed to connect by ***NDIS***, of cource these rules don't make ***gc_modem*** because they don't use tty, which gc_modem is related to.
 
-## modems which is prepared rule
+## modems which are prepared rule
 
 ### Huawei E173
 Inexpensive 3G modem.
-### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=263287908707&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">ZTE-mf190</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=263287908707&mpt=[CACHEBUSTER]">
-Inexpensive 3G modem.
 
-### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=282356097050&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">ZTE-MF821</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=282356097050&mpt=[CACHEBUSTER]">
-Inexpensive 4G(LTE) modem but ***gc_modem*** link available due to it's serial connection suppport.
+### ZTE-mf190
+Inexpensive 3G modem. This model has several model IDs
 
-### <a target="_self" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&icep_item=122290531078&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg">Qualcomm_Siemens-SG75</a><img style="text-decoration:none;border:0;padding:0;margin:0;" src="http://rover.ebay.com/roverimp/1/711-53200-19255-0/1?ff3=2&pub=5575391936&toolid=10001&campid=5338394097&customid=&item=122290531078&mpt=[CACHEBUSTER]">
+### ZTE-MF821
+Inexpensive 4G(LTE) modem, but ***gc_modem*** link available due to its serial connection support. This device also supports ***QMI***, refer to the qmi-network.conf of this device.
+
+### Qualcomm_Siemens-SG75
 4G modem. The connection interface is ***NDIS***. 
 
 ### Huawei w04
 4G modem. The connection interface is ***NDIS***. 
 
 ### [NTT DoCoMo L02-a](https://amzn.to/2QxxlkF)
-Japanese inexpensive 3G modem. This can be used in Japan because of it is adapted japanese wireless reguration called 技適(giteki).
+Japanese inexpensive 3G modem. This device adapts the Japanese wireless regulation called 技適(giteki).
 ### [NTT DoCoMo L05-a](https://amzn.to/2NoD9L3)
-Japanese inexpensive 3G modem. This can be used in Japan because of it is adapted japanese wireless reguration called 技適(giteki).
+Japanese inexpensive 3G modem. This device adapts the Japanese wireless regulation called 技適(giteki).
 
 ## Request to add rule file
-Add rule file request is welcome, both pull request and just [issue](https://github.com/UedaTakeyuki/gc_modem/issues) with sample 3G modem device.
+Add rule file request is welcome, both pull requests and just [issue](https://github.com/UedaTakeyuki/gc_modem/issues) with a sample 3G modem device.
 
 ## QA
-Any questions, suggestions, reports are welcome! Please make [issue](https://github.com/UedaTakeyuki/gc_modem/issues) without hesitation! 
+Any questions, suggestions, or reports are welcome! Please make [issue](https://github.com/UedaTakeyuki/gc_modem/issues) without hesitation! 
