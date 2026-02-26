@@ -39,13 +39,13 @@ Note that the 4G modem which is designed to connect by ***NDIS***, of cource the
 Inexpensive 3G modem.
 
 ### Huawei E303C
-No rules are necessary because this device supports Huawei ***HiLink*** that provides ***ether** device. For setup of the HiLink, connect to 192.168.1.1 (or 192.168.8.1 for some devices) by web browser and set APN.
+No rules are necessary because this device supports Huawei ***HiLink*** that provides ***ether*** device. For setup of the HiLink, connect to 192.168.1.1 (or 192.168.8.1 for some devices) by web browser and set APN.
 
 ### ZTE-mf190
 Inexpensive 3G modem. This model has several model IDs
 
 ### ZTE-MF821
-Inexpensive 4G(LTE) modem, but ***gc_modem*** link available due to its serial connection support. This device also supports ***QMI***, refer to the qmi-network.conf of this device.
+Inexpensive 4G(LTE) modem, but ***gc_modem*** link available due to its serial connection support. This device also supports ***QMI***, refer to the [qmi](https://github.com/UedaTakeyuki/gc_modem/tree/master/qmi) of this device.
 
 ### Qualcomm_Siemens-SG75
 4G modem. The connection interface is ***NDIS***. 
