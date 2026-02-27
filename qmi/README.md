@@ -33,7 +33,7 @@ sudo qmi-network --profile=./soracom.conf /dev/cdc-wdm0 start
 sudo qmi-network --profile=./soracom.conf /dev/cdc-wdm0 stop
 ```
 
-- Default profile
+- Default profile  
 Without --profile option, ```/etc/qmi-network.conf``` is used as the profile. So, you can copy one of the .conf files of this to the ```/etc/qmi-network.conf```.
 
 ## documents
