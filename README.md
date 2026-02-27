@@ -3,7 +3,8 @@ USB 3G dongle and Data SIM card utilities
 
 - [udev_rules](udev_rules/README.md) : Udev rules for usb 3G modem recognition.
 - [wvdial](wvdial/README.md) : Settings for ppp connection with SIM cards.
-- [scripts](scripts/README.md) : utils to get information of 3G Dongle. 
+- [scripts](scripts/README.md) : utils to get information of 3G Dongle.
+- [qmi](qmi/README.md): utils and profiles to connect to LTE Dongle via QMI.
 
 ## install
 download from [release](https://github.com/UedaTakeyuki/gc_modem/releases)
