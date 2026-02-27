@@ -17,7 +17,14 @@ qmi-network [OPTIONS] [DEVICE] [COMMAND]
   - --profile=[PATH] Use the profile in the specified path
   - --help Show help options
   - --version Show version
+- [DEVICE] is given as the full path to the cdc-wdm character device, e.g. /dev/cdc-wdm0
+ 
+- COMMAND
+  - start
+  - stop
+  - status 
 
+- Examples
 ```
 sudo qmi-network --profile=./soracom.conf /dev/cdc-wdm0 start
 ```
@@ -26,6 +33,7 @@ sudo qmi-network --profile=./soracom.conf /dev/cdc-wdm0 start
 sudo qmi-network --profile=./soracom.conf /dev/cdc-wdm0 stop
 ```
 
+- Default profile
 Without --profile option, ```/etc/qmi-network.conf``` is used as the profile. So, you can copy one of the .conf files of this to the ```/etc/qmi-network.conf```.
 
 ## documents
