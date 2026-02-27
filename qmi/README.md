@@ -1,8 +1,7 @@
 # QMI (Qualcomm MSM Interface)
 Here are the chips needed to use an LTE communication dongle with QMI from Linux.
 
-## qmi-network
-A command tool to manage QMI devices.
+## qmi-network: A command tool to manage QMI devices.
 
 ### installation
 
