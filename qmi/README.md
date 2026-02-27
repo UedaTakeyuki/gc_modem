@@ -1,7 +1,7 @@
 # QMI (Qualcomm MSM Interface)
 Here are the chips needed to use an LTE communication dongle with QMI from Linux.
 
-## qmi-network: A command tool to manage QMI devices.
+## 1. qmi-network: A command tool to manage QMI devices.
 
 ### installation
 
@@ -36,3 +36,6 @@ sudo qmi-network --profile=./soracom.conf /dev/cdc-wdm0 stop
 Without --profile option, ```/etc/qmi-network.conf``` is used as the profile. So, you can copy one of the .conf files of this to the ```/etc/qmi-network.conf```.
 
 - manpage of the qmi-network is available [here](https://www.freedesktop.org/software/libqmi/man/latest/qmi-network.1.html?__goaway_challenge=meta-refresh&__goaway_id=507928b5219e97d47446903227df0ad5&__goaway_referer=https%3A%2F%2Fwww.google.com%2F)
+
+## 2. pre-defined profile
+Some of the profile files to set APN provided by the carrier are available in this folder with the name of ```.conf```.
