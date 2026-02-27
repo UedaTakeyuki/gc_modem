@@ -35,5 +35,4 @@ sudo qmi-network --profile=./soracom.conf /dev/cdc-wdm0 stop
 - Default profile  
 Without --profile option, ```/etc/qmi-network.conf``` is used as the profile. So, you can copy one of the .conf files of this to the ```/etc/qmi-network.conf```.
 
-## documents
-- [manpage of the qmi-network](https://www.freedesktop.org/software/libqmi/man/latest/qmi-network.1.html?__goaway_challenge=meta-refresh&__goaway_id=507928b5219e97d47446903227df0ad5&__goaway_referer=https%3A%2F%2Fwww.google.com%2F)
+- manpage of the qmi-network is available [here](https://www.freedesktop.org/software/libqmi/man/latest/qmi-network.1.html?__goaway_challenge=meta-refresh&__goaway_id=507928b5219e97d47446903227df0ad5&__goaway_referer=https%3A%2F%2Fwww.google.com%2F)
